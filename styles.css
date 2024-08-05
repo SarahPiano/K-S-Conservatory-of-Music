@@ -1,0 +1,380 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    background-color: #548687;
+    color: #fff;
+    border: none;
+    padding: 30px 80px;
+    font-size: 28px;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-top: 25px;
+}
+
+/* Header and Navigation */
+.header {
+    background-color: #49394e;
+    padding: 10px 0;
+    color: #fff;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#logo {
+    height: 50px;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navigation li {
+    margin: 0 15px;
+    font-family: "Open Sans";
+}
+
+.navigation a {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* Banner Section */
+#home-video {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -100;
+}
+
+.text-overlay {
+    position: relative;
+    padding: 200px 20px;
+}
+
+.text-overlay h1 {
+    font-size: 100px;
+    margin-bottom: 100px;
+}
+
+.text-overlay h4 {
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    margin: 5px 0;
+}
+
+/* Difference Section */
+#Difference-Text {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#Difference-Text h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+#Difference-Text h3 {
+    font-size: 48px;
+    margin: 10px 300px 0px;
+    text-align: left;
+}
+
+#Difference-Text p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0px 300px 50px;
+    text-align: left;
+}
+
+/* Music Lessons For Section */
+#music-lessons-for {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+#music-lessons-for h2 {
+    font-size: 48px;
+    margin: 0;
+}
+
+#music-lessons-for p {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Images Container */
+.images-container {
+    display: flex;
+    justify-content: center; /* Center align images horizontally */
+    gap: 20px; /* Space between the images */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    padding: 20px;
+}
+
+/* Image Container */
+.image-container {
+    display: flex;
+    flex-direction: column; /* Stack image and caption vertically */
+    align-items: center; /* Center items horizontally */
+    width: 400px; /* Adjust width as needed */
+}
+
+/* Image Styles */
+.image-container img {
+    width: 300px; /* Set width of image */
+    height: 300px; /* Set height of image */
+    border-radius: 50%; /* Make image a circle */
+    object-fit: cover; /* Ensure image covers the circle without distortion */
+    margin-bottom: 10px; /* Space between image and caption */
+}
+
+/* Caption Styles */
+.caption {
+    font-size: 28px;
+    text-align: center; /* Center align text */
+    color: #333; /* Adjust text color if needed */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Adjust image size and container width for tablets and smaller screens */
+    .image-container {
+        width: 150px; /* Smaller width for tablets */
+    }
+
+    .caption {
+        font-size: 16px; /* Smaller font size for captions */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust for mobile screens */
+    .image-container {
+        width: 120px; /* Smaller width for mobile screens */
+    }
+
+    .caption {
+        font-size: 14px; /* Smaller font size for captions */
+    }
+
+    #music-lessons-for h2 {
+        font-size: 20px; /* Smaller heading size */
+    }
+
+    #music-lessons-for p {
+        font-size: 16px; /* Smaller paragraph size */
+    }
+}
+
+/* Stats Section */
+#stats {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of flex items */
+    width: 100%;
+    justify-content: space-around;
+    padding: 40px;
+    margin-bottom: 10px;
+    border: solid 5px #49394e;
+    border-radius: 35px;
+    background-color: #fff;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.stat-box {
+    flex: 1 1 calc(25% - 40px); /* Adjust to fit within the container and account for margins */
+    margin: 20px;
+    border: solid 2px #49394e;
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.stat-box h4 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.stat-box h2 {
+    font-size: 60px;
+    margin: 0;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    #stats {
+        padding: 10px;
+    }
+
+    .stat-box {
+        flex: 1 1 calc(50% - 20px); /* Adjust to fit within the container on medium screens */
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #stats {
+        padding: 10px;
+    }
+
+    .stat-box {
+        flex: 1 1 100%; /* Stack items vertically on small screens */
+        margin: 10px 0;
+    }
+}
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.footer img {
+  width: 100px;
+  height: auto;
+}
+
+.footer h4 {
+  margin: 0;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer .icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .navigation ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation li {
+        margin: 10px 0;
+    }
+
+    #home-video .text-overlay {
+        padding: 100px 10px; /* Adjust padding for smaller screens */
+    }
+
+    .text-overlay h1 {
+        font-size: 50px; /* Adjust font size */
+        margin-bottom: 50px; /* Adjust margin */
+    }
+
+    .text-overlay h4 {
+        font-size: 16px; /* Adjust font size */
+    }
+
+    #Difference-Text h2 {
+        font-size: 40px; /* Adjust font size */
+    }
+
+    #Difference-Text h3 {
+        font-size: 30px; /* Adjust font size */
+    }
+
+    #Difference-Text p {
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .images-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container {
+        width: 80%;
+        height: auto; /* Adjust height for better responsiveness */
+        margin: 20px 0;
+    }
+
+    .stat-box {
+        flex: 1 1 100%; /* Ensure each stat box takes full width on smaller screens */
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-overlay h1 {
+        font-size: 36px; /* Further adjust font size */
+        margin-bottom: 30px;
+    }
+
+    .text-overlay h4 {
+        font-size: 14px;
+    }
+
+    #Difference-Text h2 {
+        font-size: 30px;
+    }
+
+    #Difference-Text h3 {
+        font-size: 24px;
+    }
+
+    #Difference-Text p {
+        font-size: 12px;
+    }
+
+    .image-container {
+        width: 90%;
+    }
+
+    .footer img {
+        height: 40px;
+    }
+
+    .footer .icon {
+        width: 20px;
+        height: 20px;
+    }
+}
